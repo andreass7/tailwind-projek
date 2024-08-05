@@ -6,7 +6,15 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': {'min': '320px','max': '350px'},
+        // => @media (max-width: 639px) { ... }
+        
+        'md': {'min': '360px','max': '440px'},
+        // => @media (max-width: 767px) { ... }
+      }
+    },
   },
   plugins: [],
 }
